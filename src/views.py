@@ -44,7 +44,10 @@ async def replicate(request):
     if not fork_request.ok:
         return response.text('Fail. No access to self-replicating app repository')
 
-    return response.text('Success. Self-replicating app replicated itself.')
+    return response.html(
+        'Success. Self-replicating app replicated itself and is available now in ' \
+        f'<a href="https://github.com/{fork_request.json()["full_name"]}">your GitHub profile</a>',
+    )
 
 
 @sra_bp.exception(NotFound)
