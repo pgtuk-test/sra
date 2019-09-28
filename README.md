@@ -1,10 +1,12 @@
 ## Self-replicating application
+This is a web-based python application which asks user for an access to read and write his or her public repository data and, if granted, forks itself into user's profile.
 
-## Heroku instalation
+
+## Heroku deployment
 This instaction assumes that you already have registered accounts at [Heroku](https://id.heroku.com/login) and [GitHub](https://github.com/).
 
 ### 1. Prepare Heroku app
-  - Go to Heroku deploymennt page with [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+  - Go to Heroku deployment page with [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
   - Fill the `App name` field. Try to give it simple and meaningful name, because it will be used in an URL (`https://<your-app-name>.herokuapp.com`) to access your application.
   - Don't close this page - you'll need it later after you register a GitHub application.
  
